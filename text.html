@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anniversary Celebration</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+      background-color: #f2f2f2;
+      font-family: "Lato", sans-serif;
+    }
+
+    /* First Parallax Image with Anniversary Text */
+    .bgimg-1 {
+      background-image: url('images/1a4c3d35-5829-459a-bbd0-e513045744b3.jpg'); /* Same image for both sections */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100%;
+    }
+
+    .celebrate {
+      color: #FF69B4;
+      font-size: 36px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .anniversary-bar {
+      background-color: #FFD700;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* About Section Background - Parallax Effect (same as homepage) */
+    #about {
+      background-image: url('images/bcf67536-858f-48e0-9aac-c4107dce00a1.jpg'); /* Same image for both sections */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white; /* Adjust the text color for readability */
+      padding: 64px 0;
+    }
+
+    /* Make text centered */
+    .w3-center {
+      text-align: center;
+    }
+
+    /* Optional: Apply padding to text for better readability on the About section */
+    #about .w3-content {
+      padding: 50px;
+      background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better text contrast */
+      max-width: 800px;  /* Limit the width for better control */
+      margin: 0 auto;    /* Center the content */
+      overflow: auto;    /* Allow the content to scroll if it overflows */
+    }
+
+    #about .w3-display-middle {
+      max-width: 100%; /* Ensure the container doesn't stretch beyond the screen width */
+      word-wrap: break-word; /* Allow long words to break and not overflow */
+    }
+
+    #about p {
+      font-size: 18px;  /* Adjust the font size to fit better */
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top anniversary-bar">
+  <div class="w3-bar" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button">HOME (Family)</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-heart"></i> SPECIAL DAY</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Anniversary Text (Homepage) -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity celebrate">HAPPY ANNIVERSARY!</span>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Anniversary Text (About Section) -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="about">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity celebrate">
+      <div class="w3-content">
+        <p>Dear Mummy and Papa, <br> I love you guys sooooo much. HAPPY ANNIVERSARY! :) I'm sorry I can't be there in person. :( I know I call you guys about the same problems every day, but what amazes me is that you guys listen to the same stuff every single day. Lol. Thank you guys for that, I don't know what I would do without you. I know this is the first anniversary in 15.5 years (I did the math) where all four of us are not together in person. But now, I guess we have to get used to this, at least for now. I LOVE YOU GUYS SO MUCH AND HOPE YOU HAVE THE BEST DAY. And next time I am in Belgium, hopefully, I am not out of commission like the last two times, and we will make the best of it. This time, we'll do WHATEVER you guys want. <br> Love, <br> Teg <br> PS, I'm always watching and I took ye vali picture myself to bachke rehna!!!!!!!</p>
+      </div>
+    </span>
+  </div>
+</div>
+
+<script>
+// Toggle Navigation Menu
+function toggleFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<footer>
+    <p>© 2025 Teg's Family Website. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
